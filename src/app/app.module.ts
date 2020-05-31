@@ -10,6 +10,7 @@ import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.com
 import { FirstaComponent } from './component/first/firsta/firsta.component';
 import { FirstbComponent } from './component/first/firstb/firstb.component';
 import { FirstcComponent } from './component/first/firstc/firstc.component';
+import { FourthComponent } from './component/fourth/fourth.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FirstcComponent } from './component/first/firstc/firstc.component';
     PagenotfoundComponent,
     FirstaComponent,
     FirstbComponent,
-    FirstcComponent
+    FirstcComponent,
+    FourthComponent
   ],
   imports: [
     BrowserModule,

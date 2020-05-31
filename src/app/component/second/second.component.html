@@ -1,7 +1,11 @@
 <div class="container mt-5 text-center font-weight-bold text-uppercase">
   Hello from second component
-
-  <div>
-    <button class="mt-5 btn btn-primary" (click)="redirectToComponent()">Redirect to First-Component</button>
+<div class="row mt-5">
+  <div class="col-lg-6">
+    <button class="btn btn-primary" style="margin-left: 19rem;" (click)="redirectToComponent()">Optional Route Params</button>
   </div>
+  <div class="col-lg-6">
+    <button class="btn btn-danger" style="margin-right: 19rem;" (click)="redirectToFourthComponent()">Mandetory Route Params</button>
+  </div>
+</div> 
   </div>

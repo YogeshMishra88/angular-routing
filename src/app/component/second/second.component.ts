@@ -8,13 +8,18 @@ import{ Router } from '@angular/router'
 })
 export class SecondComponent implements OnInit {
 
+  employee:any[]=[{ID:'A106',Name:'LAURA'}];
+
   constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
   redirectToComponent():void{
-    console.log("Redirection.......");
-    this.router.navigate(["/first-component",{id:1,name:'xxxx'}]);
+    this.router.navigate(["/third-component",{id:'EMP010',name:'Andeson John'}]);
+  }
+
+  redirectToFourthComponent() : void{
+      this.router.navigate(["/fourth-componenet",this.employee[0].ID,this.employee[0].Name]);
   }
 }

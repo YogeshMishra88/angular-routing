@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {FirstComponent} from './component/first/first.component';
 import {SecondComponent} from './component/second/second.component';
 import {ThirdComponent} from './component/third/third.component';
+import {FourthComponent} from './component/fourth/fourth.component';
 import {PagenotfoundComponent} from './component/pagenotfound/pagenotfound.component';
 import {FirstaComponent} from './component/first/firsta/firsta.component';
 import {FirstbComponent} from './component/first/firstb/firstb.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
 },
   { path:'second-component',component:SecondComponent},
   { path:'third-component',component:ThirdComponent},
+  { path:'fourth-componenet/:id/:name',component:FourthComponent},
   { path: '' , redirectTo:'/first-component/first-a',pathMatch:'full'},
   { path:'**',component:PagenotfoundComponent}
 ];
