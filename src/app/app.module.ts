@@ -11,6 +11,7 @@ import { FirstaComponent } from './component/first/firsta/firsta.component';
 import { FirstbComponent } from './component/first/firstb/firstb.component';
 import { FirstcComponent } from './component/first/firstc/firstc.component';
 import { FourthComponent } from './component/fourth/fourth.component';
+import { CustomersModule } from './customers/customers.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FourthComponent } from './component/fourth/fourth.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CustomersModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -22,6 +22,7 @@ const routes: Routes = [
   { path:'second-component',component:SecondComponent},
   { path:'third-component',component:ThirdComponent},
   { path:'fourth-componenet/:id/:name',component:FourthComponent},
+  { path:'customers', loadChildren:()=>import('./customers/customers.module').then(m=>m.CustomersModule)},
   { path: '' , redirectTo:'/first-component/first-a',pathMatch:'full'},
   { path:'**',component:PagenotfoundComponent}
 ];
